@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="HotelDoge.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>HotelDoge</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+         <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form runat="server">
+     <nav class="flexboxallcenter navbar">
+      <h3 runat="server" id="Logo" onclick="Logo_click"><span>Hotel<span>Doge</h3>
+      <ul class="flexboxallcenter">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#RoomCategories">Categorie</a></li>
+        <li><a href="#HotelFeatures">Features</a></li>
+        <li><a href="#contactus">Contact Us</a></li>
+      </ul>
+      <div class="button">
+        <button runat="server" id="btnLogin" onserverclick="btnLogin_Click">Login</button>
+        <button type="button" id="btnSignup" runat="server" onserverclick="btnSignup_Click">Sign Up</button>
+      </div>
+    </nav>
+  
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        <%-- <footer>
+    <div class="footercontenner">
+      <h1>Hotel<span>Doge</span></h1>
+      <a id="aHome" href="#">Home</a>
+      <a id="aRooms" href="#">Rooms</a>
+      <a id="aFood" href="#">Food Menu</a>
+      <a id="aContact" href="#">Contact</a>
+   <p id="HotelDetails">
+     Our Hotel Doge provide verios type of room <br> including Standerd room,
+          Luxury Room And also Super Delux Rooms.
+   </p> 
+   <ul class="footerhome">
+     <li><a href="#">Design</a></li>
+     <li><a href="#">Seo</a></li>
+     <li><a href="#">Development</a></li>
+     <li><a href="#">Marketing</a></li>
+   </ul>
+     <ul class="footerRooms">
+       <li><a href="#">Standerd</a></li>
+       <li><a href="#">Delux</a></li>
+       <li><a href="#">Luxury</a></li>
+       <li><a href="#">Honeymoon Suit</a></li>
+     </ul>   
+     <ul class="footerfood">
+       <li><a href="#">Breakfast</a></li>
+       <li><a href="#">Dinner</a></li>
+       <li><a href="#">Lunch</a></li>
+     </ul>
+     <ul class="footerContact">
+       <li><a href="#">Privacy Policy</a></li>
+       <li><a href="#">Trams & Conditions</a></li>
+       <li><a href="#">More</a></li>
+     </ul>
+
+
+     
+    </div>    
+  </footer>--%>
+   </form>
+
+</body>
+</html>

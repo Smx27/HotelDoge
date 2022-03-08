@@ -1,0 +1,407 @@
+﻿:root {
+    --Maincolor: rgb(252,247,251);
+    --Subcolor: rgb(253,203,205);
+    --Heilightcolor: rgb(99,71,249);
+    --textcolor: rgb(31,51,71);
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid rgb(235, 138, 27); */
+}
+
+.price {
+    height: 370px;
+    width: 25%;
+    margin-top: 7%;
+    margin-right: -12%;
+    z-index: 999;
+    background-color: var(--Maincolor);
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+    .price h1 {
+        padding-left: 30px;
+        padding-top: 19px;
+        padding-bottom: 20px;
+    }
+
+    .price label {
+        padding-left: 25px;
+        padding-top: 2px;
+        padding-bottom: 25px;
+    }
+
+    .price input {
+        width: 94%;
+        margin-left: 3%;
+    }
+
+.row h1 {
+    height: 130px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: var(--Subcolor);
+    margin-top: 20px;
+    padding-left: 90px;
+    padding-top: 40px;
+    position: absolute;
+}
+
+.GuestDetails {
+    height: 500px;
+    width: 50%;
+    margin-left: 10%;
+    /* border: 2px solid rgba(230, 45, 45, 0.18); */
+    margin-top: 2%;
+    margin-bottom: 7%;
+    background-color: var(--Maincolor);
+    border-radius: 5px;
+    margin-right: 4%;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+    .GuestDetails label {
+        margin-left: 11%;
+    }
+
+    .GuestDetails input {
+        width: 77%;
+        margin-left: 9%;
+        margin-bottom: 15px;
+    }
+
+#Title {
+    margin-left: 3%;
+    margin-bottom: 20px;
+}
+
+.Fname {
+    display: inline;
+    height: 10px;
+    width: 60%;
+}
+
+    .Fname input {
+        width: 61%;
+        margin-left: 28%;
+        margin-bottom: 25px;
+    }
+
+.GuestDetails h1 {
+    padding-left: 50px;
+    padding-top: 19px;
+    padding-bottom: 10px;
+}
+
+.GuestDetails h2 {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+
+.info {
+    height: auto;
+    width: 50%;
+    margin-left: 12%;
+    /* border: 2px solid red; */
+    margin-top: 7%;
+    z-index: 999;
+    background-color: var(--Maincolor);
+    border-radius: 5px;
+    margin-right: 12px;
+    margin-bottom: 5%;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+    .info h2 {
+        padding-left: 50px;
+        padding-top: 19px;
+        padding-bottom: 10px;
+    }
+
+    .info h1 {
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 2px;
+    }
+
+    .info p {
+        padding-left: 25px;
+        padding-top: 2px;
+        padding-bottom: 25px;
+    }
+
+    .info input {
+        margin-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+    }
+
+#People {
+    margin-left: 22px;
+}
+
+.Informatiostoknow {
+    margin-left: 15px;
+}
+
+    .Informatiostoknow ul {
+        margin-left: 15px;
+    }
+
+    .Informatiostoknow h2 {
+        margin-bottom: -18px;
+    }
+
+
+.Doge {
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    /* border: 2px solid var(--textcolor); */
+    background-color: rgba(243, 236, 236, 0.5);
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+.DogeRules {
+    height: 60px;
+    width: 100%;
+    margin-left: -15px;
+    /* border: 2px solid var(--textcolor); */
+    border-radius: 4px;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+    .DogeRules h2 {
+        margin-bottom: -3px;
+        background-color: rgba(243, 236, 236, 0.5);
+        border-radius: 4px;
+    }
+
+.DogeDetails {
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid var(--textcolor); */
+    background-color: rgba(243, 236, 236, 0.5);
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.DogePaymentDetails {
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid var(--textcolor); */
+    background-color: rgba(243, 236, 236, 0.5);
+    border-radius: 4px;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+.DogePaymentDeta h1 {
+    padding-top: 5px;
+}
+
+.infoinput {
+    margin-left: 9%;
+}
+
+.infoinput {
+    width: 77%;
+}
+
+.RoomP {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#RoomPl {
+    margin-right: 30%;
+}
+
+#Disl {
+    margin-right: 45%;
+}
+
+#Roomtl {
+    margin-right: 31%;
+}
+
+#Covidl {
+    margin-right: 30%;
+}
+
+#TotalPl {
+    margin-right: 22%;
+}
+
+.Pay {
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* border: 2px solid red; */
+    background-color: rgba(243, 236, 236, 0.5);
+    border-radius: 4px;
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+
+.sheet {
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    /* border: 2px solid rgba(212, 36, 36, 0.18); */
+    background-color: var(--maincolor);
+    box-shadow: 0.3px 0.2px 2.2px rgba(0, 0, 0, 0.011), 0.8px 0.5px 5.3px rgba(0, 0, 0, 0.016), 1.5px 0.9px 10px rgba(0, 0, 0, 0.02), 2.7px 1.6px 17.9px rgba(0, 0, 0, 0.024), 5px 2.9px 33.4px rgba(0, 0, 0, 0.029), 12px 7px 80px rgba(0, 0, 0, 0.04);
+}
+
+    .sheet label {
+        margin-bottom: -18px;
+        margin-left: -10px;
+    }
+
+#RoomNo {
+    margin-left: -15px;
+    margin-bottom: -25px;
+}
+
+.sheet h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 8%;
+    border: 1px #333;
+}
+
+h4 {
+    background-color: var(--Maincolor);
+    padding-bottom: 5px;
+    color: var(--Heilightcolor);
+}
+
+.input-group {
+    margin-bottom: 3px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0;
+}
+
+.input-box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+
+    .input-box input {
+        width: 90%;
+    }
+
+    .input-box:last-child {
+        margin-right: 0;
+    }
+/* .input-box:hover{
+    transition: 1s;
+    color: var(--heilightcolor);
+} */
+.name {
+    padding: 5px 5px 5px 10px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    color: #333;
+}
+
+.name {
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+    .name:hover {
+        border-color: var(--Heilightcolor);
+    }
+
+.input-box label {
+    position: relative;
+    left: 7%;
+    display: block;
+    /* float: left; */
+    text-align: left;
+    border: none;
+}
+
+.name:focus {
+    transition: 1s;
+    color: var(--Heilightcolor);
+}
+
+.input-box select {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+    .input-box select:focus {
+        text-align: center;
+    }
+
+.input-box button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    background-color: var(--Heilightcolor);
+    color: var(--Maincolor);
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+}
+
+    .input-box button:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+        box-shadow: 2.8px 2.8px 2.2px 10px rgba(0, 0, 0, 0.016), 6.7px 6.7px 5.3px -10px rgba(0, 0, 0, 0.025), 12.5px 12.5px 10px -10px rgba(0, 0, 0, 0.032), 22.3px 22.3px 17.9px -10px rgba(0, 0, 0, 0.04), 41.8px 41.8px 33.4px -10px rgba(0, 0, 0, 0.049), 100px 100px 80px -10px rgba(0, 0, 0, 0.07);
+    }

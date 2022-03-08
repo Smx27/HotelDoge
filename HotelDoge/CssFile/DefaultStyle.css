@@ -1,0 +1,721 @@
+﻿:root {
+    --Maincolor: rgb(252, 247, 251);
+    --Subcolor: rgb(253, 203, 205);
+    --Heilightcolor: rgb(99, 71, 249);
+    --textcolor: rbg(31, 51, 71);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Maincolor);
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px 5px 15px;
+}
+
+    .navbar h3 {
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        color: var(--textcolor);
+    }
+
+        .navbar h3 span {
+            color: var(--Heilightcolor);
+        }
+
+    .navbar ul {
+        width: 20%;
+    }
+
+        .navbar ul li {
+            list-style: none;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                font-family: "Open Sans", sans-serif;
+                color: var(--textcolor);
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+                .navbar ul li a:hover {
+                    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+                    color: var(--Heilightcolor);
+                    transition: 0.5s ease-in-out;
+                }
+
+    .navbar .button {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .navbar .button button {
+            cursor:pointer;
+            padding: 5px;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            width: 45%;
+        }
+
+.button #btnSignup {
+    color: var(--Maincolor);
+    background: var(--Heilightcolor);
+}
+
+    .button #btnSignup:hover {
+        background-color: var(--Maincolor);
+        color: var(--textcolor);
+        transition: 0.5s ease-in-out;
+        border: 1px solid var(--Heilightcolor);
+    }
+
+.button #btnLogin {
+    background-color: var(--Maincolor);
+    margin-right: 5px;
+}
+
+    .button #btnLogin:hover {
+        border: 1px solid var(--Heilightcolor);
+        transition: 1s ease-in-out;
+    }
+
+#home {
+    height: 85vh;
+    width: 100%;
+}
+
+    #home .IntroPage {
+        height: 85%;
+        font-family: "Lato", sans-serif;
+        color: var(--textcolor);
+        width: 100%;
+        background: rgb(253, 203, 205);
+        background-size: cover;
+        background-image: linear-gradient( 90deg, rgba(253, 203, 205, 1) 25%, rgba(255, 255, 255, 0) 100% ), url("https://static.onecms.io/wp-content/uploads/sites/28/2018/03/mulia-resort-pool-bali-indonesia-POOLVIEW0318.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 35px;
+    }
+
+.IntroPage h1:first-child {
+    font-size: 5rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.IntroPage h1:nth-child(2) {
+    user-select: none;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
+
+.IntroPage p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 1.8rem;
+}
+
+.IntroPage a {
+    margin-top: 1.7rem;
+    text-decoration: none;
+    color: var(--Heilightcolor);
+}
+
+.SearchDiv {
+    padding: 15px;
+    border: 1px solid var(--Heilightcolor);
+    height: 20%;
+    width: 85%;
+    border-radius: 9px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    margin: auto;
+    position: relative;
+    top: -4rem;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(84px);
+    -webkit-backdrop-filter: blur(84px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: "Lato", sans-serif;
+}
+
+    .SearchDiv .Facility {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .SearchDiv .Facility .first a {
+            text-decoration: none;
+            color: rgb(252, 192, 139);
+            cursor: pointer;
+        }
+
+        .SearchDiv .Facility .first {
+            width: 50%;
+            height: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: Row;
+        }
+
+        .SearchDiv .Facility .items {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 100;
+            width: 50%;
+            height: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: Row;
+        }
+
+        .SearchDiv .Facility i {
+            font-size: 35px;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+.swiming i {
+    color: rgb(133, 218, 245);
+    border: 1px solid rgb(133, 218, 245);
+    margin: 2px;
+}
+
+.wifi i {
+    color: rgb(238, 115, 115);
+    border: 1px solid rgb(238, 115, 115);
+    margin: 2px;
+}
+
+.dinner i {
+    color: rgb(173, 228, 196);
+    border: 1px solid rgb(173, 228, 196);
+    margin: 2px;
+}
+
+.Hottub i {
+    color: rgb(254, 164, 119);
+    border: 1px solid rgb(254, 164, 119);
+    margin: 2px;
+}
+
+.SearchDiv .Search {
+    height: 100%;
+    width: 50%;
+}
+
+.Search h1 {
+    height: 30%;
+}
+
+.Searchbar label i {
+    color: rgb(207, 100, 100);
+}
+
+.Search input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+    .Search input:hover {
+        cursor: text;
+    }
+
+.Search label:hover {
+    cursor: pointer;
+}
+
+.Search button {
+    padding: 7px;
+    border-radius: 95px;
+    color: var(--Maincolor);
+    width: 10%;
+    background-color: var(--Heilightcolor);
+    border: 1px solid var(--Heilightcolor);
+}
+
+    .Search button i {
+        font-size: 28px;
+    }
+
+.Search .Searchbar {
+    height: 40%;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 45px;
+    padding: 8px 5px 8px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.HotelFeatures {
+    height: 90vh;
+    width: 85%;
+    margin: auto;
+}
+
+    .HotelFeatures h1 {
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        color: var(--textcolor);
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .HotelFeatures p {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        color: var(--textcolor);
+    }
+
+.Facilitiesdetails {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Facilityicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+
+.somefacilityicon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.Someextrafaciliy {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* slide start from here  */
+.FacilitySlides {
+    height: 100%;
+    width: 1014px;
+    margin-top: 5rem;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    padding: 15px;
+    /* overflow:hidden ; */
+}
+
+.slideitems {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* transition: transform 0.4s ease-in-out; */
+}
+
+    .slideitems img {
+        height: 100%;
+        width: 100%;
+    }
+
+.slideimage {
+    transition: 0.5s ease-in-out;
+}
+
+/* slide end here  */
+.RoomCategories {
+    height: 70vh;
+    width: 85%;
+    margin: auto;
+}
+
+    .RoomCategories h1 {
+        font-family: "Open Sans";
+        text-align: center;
+        padding: 10px;
+    }
+
+    .RoomCategories p {
+        font-family: "Lato";
+        padding: 0 10px 10px 10px;
+        text-align: center;
+    }
+
+.mainimage {
+    width: 65%;
+    position: relative;
+    height: 100%;
+}
+
+    .mainimage img {
+        height: 80%;
+        position: absolute;
+        width: 65%;
+        padding: 10px;
+        top: 10%;
+        left: 10%;
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+.infocard {
+    color: gray;
+    position: relative;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    background-color: white;
+    height: 50%;
+    width: 35%;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+    .infocard button {
+        position: absolute;
+        right: 10%;
+        bottom: 8%;
+        z-index:999;
+        padding: 5px 15px 5px 15px;
+        color: var(--Maincolor);
+        background-color: var(--Heilightcolor);
+        border: none;
+        outline: none;
+        box-shadow: 2px 3px 8px rgba(99, 71, 249, 0.5);
+    }
+
+    .infocard label {
+        font-size: 13px;
+        float: right;
+        position: relative;
+        right: 5%;
+        top: 5%;
+        font-family: "Lato";
+    }
+
+    .infocard button:hover + .infocard {
+        transform: scale(1.1);
+        transition: 0.5s ease;
+    }
+
+    .infocard button:hover {
+        box-shadow: 4px 6px 16px rgba(99, 71, 249, 0.7);
+        transition: 0.5s ease;
+    }
+
+    .infocard button:active {
+        transform: scale(1.05);
+    }
+
+    .infocard h2 {
+        font-family: "Open Sans";
+        text-align: center;
+        padding: 5px;
+    }
+
+.Littlebitinfo {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Extracards {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.hall {
+    position: relative;
+    height: 45%;
+    width: 60%;
+    padding: 10px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+    .hall h3,
+    .pool h3 {
+        position: relative;
+        bottom: 2%;
+        font-family: 'Open Sans';
+        text-align: center;
+    }
+
+    .hall img {
+        height: 90%;
+        width: 95%;
+    }
+
+.pool {
+    position: relative;
+    height: 45%;
+    width: 60%;
+    padding: 10px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+    .pool img {
+        height: 90%;
+        width: 95%;
+    }
+
+.contactus {
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+    .contactus .Locationimage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 60%;
+        background-image: url(./Image/3.jpg);
+        background-size: cover;
+        padding: 10px;
+        border: 10px solid white;
+    }
+
+.Sendemails {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    height: 15%;
+    padding: 10px;
+    width: 25%;
+    position: absolute;
+    bottom: 18%;
+    right: 15%;
+}
+
+    .Sendemails h1 {
+        text-align: center;
+        font-family: "Open Sans";
+        padding-bottom: 10px;
+    }
+
+    .Sendemails input {
+        padding: 10px 15px 10px 15px;
+        width: 65%;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .Sendemails button {
+        width: 30%;
+        padding: 10px;
+        border: none;
+        background-color: var(--Heilightcolor);
+        color: var(--Maincolor);
+    }
+
+        .Sendemails button:hover {
+            box-shadow: 4px 6px 16px rgba(99, 71, 249, 0.7);
+            transition: 0.5s ease;
+        }
+
+        .Sendemails button:active {
+            transform: scale(1.05);
+        }
+
+/* footer start form here  */
+footer {
+    padding: 15px;
+    height: 40%;
+    width: 80%;
+    background-color: var(--Maincolor);
+}
+
+.footercontenner {
+    font-family: "Lato";
+    display: grid;
+    grid-template-columns: repeat (1fr, 5);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "hotel Home Rooms Food Contact"
+        "Details homelink roomlink foodlink contact";
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer h1 {
+    grid-area: hotel;
+    font-family: "Open Sans";
+    color: var(--Heilightcolor);
+}
+
+#aHome {
+    grid-area: Home;
+}
+
+#aRooms {
+    grid-area: Rooms;
+}
+
+#aFood {
+    grid-area: Food;
+}
+
+#HotelDetails {
+    grid-area: Details;
+}
+
+#footerhome {
+    grid-area: homelink;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer li {
+    list-style: none;
+}
+
+#footerRooms {
+    grid-area: roomlink;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#footerfood {
+    grid-area: foodlink;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#footerContact {
+    grid-area: Contact;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#aContact {
+    grid-area: Contact;
+}
+
+#Author {
+    width: 100%;
+    display: block;
+    font-family: "Lato";
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+    #Author a {
+        color: var(--Heilightcolor);
+    }
+
+footer h1 span {
+    color: black;
+}
+/* 
+font-family: 'Lato', sans-serif;
+
+font-family: 'Open Sans', sans-serif; */
+
+/* Common classes */
+.flexboxallcenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexvartical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconSize i {
+    font-size: 30px;
+    padding: 3px;
+    color: var(--Heilightcolor);
+}
+
+.IconShadow {
+    height: 100px;
+    width: 100px;
+    border-radius: 13px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.014), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.02), 12.5px 12.5px 10px rgba(0, 0, 0, 0.025), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.03), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.036), 100px 100px 80px rgba(0, 0, 0, 0.05);
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.056);
+    border-left: 1px solid rgba(0, 0, 0, 0.056);
+}
+
+    .IconShadow:hover {
+        transform: scale(1.1);
+        transition: 0.5 ease-in-out;
+    }

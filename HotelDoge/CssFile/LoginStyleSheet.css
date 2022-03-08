@@ -1,0 +1,220 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Maincolor: rgba(252,247,251);
+    --Subcolor: rgba(253,203,205);
+    --Heilightcolor: rgba(99,71,249);
+    --textcolor: rgba(31,51,71);
+}
+
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.Signup {
+    height: 50%;
+    width: 50%;
+    border: 2px solid rgb(253, 252, 252);
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    background-color: var(--Maincolor);
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 1px 20px 30px rgb(199, 197, 197);
+    display: none;
+}
+
+.signupcontent {
+    height: 100%;
+    width: 50%;
+    font-family: 'lato',sans-serif;
+    padding:5%;
+}
+
+.signupimg {
+    height: 100%;
+    width: 50%;
+}
+
+
+.signupcontent h1 {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    padding-left: 34%;
+    font-family: 'open sans', sans-serif;
+}
+
+.Signup i {
+    font-size: xx-large;
+    letter-spacing: 6px;
+    padding-bottom: 2%;
+}
+
+.Signup span {
+    margin-bottom: 10%;
+    font-family: 'lato', sans-serif;
+}
+
+.Signup input {
+    width: 90%;
+    height: 7%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-family: 'lato', sans-serif;
+    border: 1px solid rgb(165, 162, 162);
+}
+
+.Signup button {
+    height: 7%;
+    width: 55%;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: var(--Heilightcolor);
+    border: 1px solid rgb(219, 216, 216);
+}
+
+    .Signup button:hover {
+        transition: ease-in-out 0.2s;
+        width: 56%;
+        height: 7.5%;
+    }
+#ContentPlaceHolder1_Signup {
+    height: 7%;
+    width: 55%;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: var(--Heilightcolor);
+    border: 1px solid rgb(219, 216, 216);
+}
+    #ContentPlaceHolder1_Signup:hover {
+        transition: ease-in-out 0.2s;
+        width: 56%;
+        height: 7.5%;
+    }
+
+    #linklogin {
+        margin-left: -16%;
+        color: rgb(10, 148, 228);
+        font-size: x-large;
+        text-decoration: none;
+        font-family: 'lato',sans-serif;
+    }
+
+.Login {
+    height: 50%;
+    width: 50%;
+    border: 2px solid rgb(253, 252, 252);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: var(--Maincolor);
+    box-shadow: 1px 20px 30px rgb(199, 197, 197)
+}
+
+.logincontent {
+    height: 100%;
+    width: 50%;
+}
+
+.loginimg {
+    height: 98%;
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 1%;
+    position: relative;
+}
+
+#linkregister {
+    margin-left: -53%;
+    margin-top: 40%;
+    z-index: 999;
+    color: rgb(10, 148, 228);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'lato',sans-serif;
+}
+
+    #linkregister:hover {
+        color: rgb(20, 90, 241);
+    }
+
+#ContentPlaceHolder1_linkregister {
+    margin-left: -53%;
+    margin-top: 40%;
+    z-index: 999;
+    color: rgb(10, 148, 228);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'lato',sans-serif;
+}
+##ContentPlaceHolder1_linkregister:hover {
+    color: rgb(20, 90, 241);
+}
+
+.Login h1 {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    padding-left: 34%;
+    font-family: 'open sans', sans-serif;
+}
+
+.Login i {
+    font-size: xx-large;
+    letter-spacing: 6px;
+    padding-bottom: 2%;
+    /*padding-left:15%;*/
+}
+#Facebook{
+    padding-left:33%
+}
+
+.Login span {
+    margin-bottom: 10%;
+    margin-left:37%;
+    font-family: 'lato', sans-serif;
+}
+
+.Login input {
+    width: 90%;
+    height: 7%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-family: 'lato', sans-serif;
+    border: 1px solid rgb(165, 162, 162);
+}
+
+.Login button {
+    height: 30px;
+    width: 200px;
+    color: whitesmoke;
+    margin-left:24%;
+    border-radius: 10px;
+    background-color: var(--Heilightcolor);
+    border: 1px solid rgb(219, 216, 216);
+}
+
+    .Login button:hover {
+        transition: ease-in-out 0.3s;
+        width: 208px;
+        height: 32px;
+    }
+
+#Forgot {
+    font-family: 'lato', sans-serif;
+    padding-left:28%
+}

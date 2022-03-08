@@ -1,0 +1,369 @@
+﻿:root {
+    --Maincolor: rgb(252, 247, 251);
+    --Subcolor: rgb(253, 203, 205);
+    --Heilightcolor: rgb(99, 71, 249);
+    --textcolor: rbg(31, 51, 71);
+    --Textfont: "Lato";
+    --Hedingfont: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containner {
+    padding-top: 5%;
+    height: 100vh;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.General .image {
+    width: 35%;
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .General .image i {
+        font-size: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 5px;
+        margin-top: 10%;
+    }
+
+        .General .image i:active {
+            border-color: var(--Heilightcolor);
+            color: var(--Heilightcolor);
+            transform: scale(1.05);
+        }
+
+    .General .image img {
+        height: 80%;
+        padding: 10px;
+        width: 95%;
+        display: inline-block;
+        object-fit: fill;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        border-left: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 70px 70px 80px rgba(0, 0, 0, 0.07);
+    }
+
+.General {
+    height: 50%;
+    width: 80%;
+    padding: 5px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 70px 70px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+    .General .description {
+        width: 65%;
+        height: 100%;
+        padding: 5px;
+        display: flex;
+    }
+
+.😒 {
+    padding: 15px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 40% 40%;
+    grid-template-areas:
+        "text text"
+        "stars stars"
+        "service service"
+        "hotel hotel";
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+    .😒 h1 {
+        font-family: var(--Hedingfont);
+        grid-area: text;
+    }
+
+.😁 {
+    grid-area: hotel;
+}
+
+.Hotelservices table tr td {
+    font-family: var(--Textfont);
+    line-height: 2rem;
+    padding: 20px;
+}
+
+.Hotelservices {
+    grid-area: service;
+}
+
+.stars li {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.😁 table tr td {
+    padding: 30px;
+}
+
+    .😁 table tr td li {
+        font-family: var(--Textfont);
+        list-style: none;
+        padding-bottom: 20px;
+    }
+
+        .😁 table tr td li p {
+            display: inline-block;
+        }
+
+.la-times-circle {
+    color: red;
+}
+
+.la-check-circle {
+    color: rgb(4, 185, 4);
+}
+
+.stars {
+    grid-area: stars;
+    display: flex;
+    align-items: center;
+    color: #fdcc0d;
+}
+
+.cardrating {
+    padding: 10px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat (1fr, 4);
+    grid-template-rows: 10% 20% 30% 15% 15% 10%;
+    grid-template-areas:
+        "text text text text"
+        "points points points points"
+        "ex1 ex2 ex3 ex4"
+        "sefty sefty security security"
+        "clean clean Host Host"
+        "button button button button";
+}
+
+    .cardrating button {
+        outline: none;
+        border: none;
+        background-color: var(--Heilightcolor);
+        color: var(--Maincolor);
+        grid-area: button;
+        font-family: var(--Textfont);
+    }
+
+        .cardrating button:hover {
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+            transition: 0.5s ease-in-out;
+        }
+
+        .cardrating button:active {
+            transform: scale(1.05);
+        }
+
+    .cardrating h2 {
+        grid-area: text;
+        font-family: var(--Hedingfont);
+    }
+
+.points,
+.pointsMark {
+    padding: 10px;
+    grid-area: points;
+}
+
+.expirience1 {
+    grid-area: ex1;
+    padding: 5px;
+    text-align: center;
+}
+
+.expirience2 {
+    padding: 5px;
+    text-align: center;
+    grid-area: ex2;
+}
+
+.expirience3 {
+    padding: 5px;
+    text-align: center;
+    grid-area: ex3;
+}
+
+.expirience4 {
+    padding: 5px;
+    text-align: center;
+    grid-area: ex4;
+}
+
+.Sefty span {
+    /* content: ""; */
+    height: 15px;
+    width: 100%;
+    display: block;
+    color: var(--Heilightcolor);
+    border-bottom: 3px solid var(--Heilightcolor);
+}
+
+.Sefty h4 {
+    display: inline-block;
+    font-family: var(--Hedingfont);
+    font-size: 0.8rem;
+}
+
+    .Sefty h4:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        font-family: var(--Textfont);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+.Sefty {
+    position: relative;
+    padding: 10px;
+    grid-area: sefty;
+}
+
+.Security h4 {
+    display: inline-block;
+    font-family: var(--Hedingfont);
+    font-size: 0.8rem;
+}
+
+    .Security h4:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        font-family: var(--Textfont);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+.Security span {
+    /* content: ""; */
+    height: 15px;
+    width: 100%;
+    display: block;
+    color: var(--Heilightcolor);
+    border-bottom: 3px solid var(--Heilightcolor);
+}
+
+.Security {
+    position: relative;
+    padding: 10px;
+    grid-area: security;
+}
+
+.Cleanliness h4 {
+    display: inline-block;
+    font-family: var(--Hedingfont);
+    font-size: 0.8rem;
+}
+
+    .Cleanliness h4:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        font-family: var(--Textfont);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+.Cleanliness span {
+    /* content: ""; */
+    height: 15px;
+    width: 100%;
+    display: block;
+    color: var(--Heilightcolor);
+    border-bottom: 3px solid var(--Heilightcolor);
+}
+
+.Cleanliness {
+    position: relative;
+    padding: 10px;
+    grid-area: clean;
+}
+
+.Host h4 {
+    display: inline-block;
+    font-family: var(--Hedingfont);
+    font-size: 0.8rem;
+}
+
+    .Host h4:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        font-family: var(--Textfont);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+.Host span {
+    /* content: ""; */
+    height: 15px;
+    width: 100%;
+    display: block;
+    color: var(--Heilightcolor);
+    border-bottom: 3px solid var(--Heilightcolor);
+}
+
+.Host {
+    position: relative;
+    padding: 10px;
+    grid-area: Host;
+}
+
+.expirience1 h2,
+.expirience2 h2,
+.expirience3 h2,
+.expirience4 h2 {
+    color: var(--Heilightcolor);
+    font-family: var(--Hedingfont);
+}
+
+.expirience1 p,
+.expirience2 p,
+.expirience3 p,
+.expirience4 p {
+    font-family: var(--Textfont);
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.points {
+    height: 40px;
+    width: 50px;
+    color: var(--Maincolor);
+    margin: auto 5px;
+    padding: 7px;
+    font-family: var(--Hedingfont);
+    background-color: var(--Heilightcolor);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pointsMark {
+    margin: auto 15%;
+}
+
+    .pointsMark h3 {
+        font-family: var(--Hedingfont);
+    }
+
+    .pointsMark p {
+        font-family: var(--Textfont);
+    }

@@ -1,0 +1,218 @@
+﻿:root {
+    --Maincolor: rgb(252, 247, 251);
+    --Subcolor: rgb(253, 203, 205);
+    --Heilightcolor: rgb(99, 71, 249);
+    --textcolor: rgb(31,51,71);
+    --Textfont: "Lato";
+    --Hedingfont: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.Dashbord {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% repeat(4,1fr);
+    grid-template-rows: 5% repeat(3,1fr);
+    grid-template-areas: "side_panel top_nav top_nav top_nav top_nav"
+        " side_panel RevenueChart RevenueChart Customatchart Customatchart"
+        "side_panel RevenueChart RevenueChart Customatchart Customatchart"
+        "side_panel TopRoom TopRoom TopRoom TopRoom";
+    gap: 1%;
+}
+
+.side_panel {
+    background-color: var(--Maincolor);
+    padding: 5%;
+    color: var(--textcolor);
+    display: flex;
+    justify-content: space-between;
+    align-self: auto;
+    align-items: center;
+    flex-direction: column;
+    grid-area: side_panel;
+    box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 12.5px 12.5px 31.7px -17px rgba(0, 0, 0, 0.067), 30.1px 30.1px 76.3px -17px rgba(0, 0, 0, 0.091), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
+}
+
+    .side_panel h1 {
+        font-family: var(--Hedingfont);
+        font-weight: 800;
+        color: var(--Heilightcolor);
+    }
+
+        .side_panel h1 span {
+            color: var(--textcolor);
+        }
+
+    .side_panel ul {
+        display: flex;
+        justify-content: space-between;
+        align-self: auto;
+        align-items: center;
+        flex-direction: column;
+        height: 20%;
+        width: 100%;
+    }
+
+        .side_panel ul li:hover ~ .side_panel ul li i {
+            color: var(--Heilightcolor);
+        }
+
+        .side_panel ul li:active {
+            color: var(--Heilightcolor);
+        }
+
+        .side_panel ul li:hover {
+            border-bottom: 2px solid var(--Heilightcolor);
+            box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 12.5px 12.5px 31.7px -17px rgba(0, 0, 0, 0.067), 30.1px 30.1px 76.3px -17px rgba(0, 0, 0, 0.091), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
+        }
+
+    .side_panel .menu {
+        height: 25%;
+    }
+
+    .side_panel ul li {
+        display: flex;
+        justify-content: flex-start;
+        align-self: auto;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        width: 100%;
+        height: 30%;
+    }
+
+        .side_panel ul li i {
+            font-size: 30px;
+            margin-right: 5%;
+        }
+
+.top_nav {
+    grid-area: top_nav;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .top_nav img {
+        border-radius: 50%;
+        width: 10%;
+        margin-right: 2%;
+    }
+
+    .top_nav h1 {
+        font-family: var(--Hedingfont);
+        font-weight: 600;
+        color: var(--textcolor);
+    }
+
+    .top_nav .admin_info {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .top_nav .search {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+.chartcanvas {
+    grid-area: RevenueChart;
+    width: 100%;
+    width: 100%;
+}
+
+.divChart {
+    background-color: white;
+    font-size: 20%;
+    border: none;
+    padding: 10px;
+    z-index: 99;
+    box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
+}
+
+.customerchartcontainner {
+    grid-area: Customatchart;
+    height: 100%;
+    width: 100%;
+}
+
+.divcustomar {
+    box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
+}
+
+.divtopRooms {
+    box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    width: 100%;
+    grid-area: TopRoom;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .divtopRooms .somerooms {
+        height: 100%;
+        overflow-y: scroll;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .divtopRooms .title {
+        width: 100%;
+        height: 30%;
+        padding: 2% 2%;
+    }
+
+    .divtopRooms img {
+        width: 10%;
+        border-radius: 50%;
+    }
+
+    .divtopRooms .room {
+        height: 24%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.091);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .divtopRooms .price {
+        color: rgb(255, 123, 0);
+        background-color: rgba(255, 182, 47, 0.342);
+        border-radius: 20px;
+        padding: 3px 20px;
+    }
+
+    .divtopRooms .roomno {
+        color: rgb(0, 255, 255);
+        background-color: rgba(216, 250, 247, 0.767);
+        border-radius: 20px;
+        padding: 3px 20px;
+    }
