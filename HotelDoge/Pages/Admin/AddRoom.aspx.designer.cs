@@ -7,74 +7,83 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HotelDoge
+namespace HotelDoge.Pages.Admin
 {
 
 
-    public partial class Site1
+    public partial class WebForm1
     {
 
         /// <summary>
-        /// head control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Logo control.
+        /// GridRoomView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Logo;
+        protected global::System.Web.UI.WebControls.GridView GridRoomView;
 
         /// <summary>
-        /// btnMasterHome control.
+        /// txtRoomNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnMasterHome;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtRoomNo;
 
         /// <summary>
-        /// btnMasterCategorie control.
+        /// txtRoomtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnMasterCategorie;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtRoomtype;
 
         /// <summary>
-        /// btnLogin control.
+        /// txtRoomPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnLogin;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtRoomPrice;
 
         /// <summary>
-        /// btnSignup control.
+        /// txtRoomCapacity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btnSignup;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtRoomCapacity;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// txtAvibility control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtAvibility;
+
+        /// <summary>
+        /// txtDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtDescription;
     }
 }

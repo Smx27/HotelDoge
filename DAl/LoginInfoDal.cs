@@ -81,7 +81,7 @@ namespace DAl
                 string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
                 using(con=new SqlConnection(cs))
                 {
-                    SqlCommand cmd = new SqlCommand("SpSignup");
+                    SqlCommand cmd = new SqlCommand("SpSignup",con);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Name", _name);
                     cmd.Parameters.AddWithValue("@Username", _email);

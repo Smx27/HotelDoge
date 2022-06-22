@@ -4,16 +4,22 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 
 namespace HotelDoge
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        string checkin = null;
-        string checkout = null;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["UserType"]!=null)
+            {
+               HtmlButton signup= (HtmlButton)Page.Master.FindControl("btnSignup");
+                signup.Style.Add("display", "none");
+                HtmlButton login =(HtmlButton)Page.Master.FindControl("btnLogin");
+                login.InnerText = "Logout";
+            }
         }
         protected void GenerelBtnBookNow_Click(object sender,EventArgs e)
         {
@@ -25,7 +31,7 @@ namespace HotelDoge
             else
             {
                 Response.Write("<script>alert('"+"Login First!"+"');</script>");
-                Response.Redirect("../DogeLogin.aspx");
+                Response.Redirect("~/Pages/DogeLogin.aspx");
             }
         }
         protected void btnLuxuryBookNow_Click(object sender,EventArgs e)
@@ -38,7 +44,7 @@ namespace HotelDoge
             else
             {
                 Response.Write("<script>alert('" + "Login First!" + "');</script>");
-                Response.Redirect("../DogeLogin.aspx");
+                Response.Redirect("~/Pages/DogeLogin.aspx");
                 //Response.Redirect("DogeLogin.aspx");
                 //Error Log Table Have To Create 
             }
@@ -52,7 +58,7 @@ namespace HotelDoge
             }
             else
             {
-                Response.Redirect("../DogeLogin.aspx");
+                Response.Redirect("~/Pages/DogeLogin.aspx");
                 Response.Write("<script>alert('" + "Login First!" + "');</script>");
             }
         }
@@ -66,7 +72,7 @@ namespace HotelDoge
             else
             {
                 Response.Write("<script>alert('" + "Login First!" + "');</script>");
-                Response.Redirect("../DogeLogin.aspx");
+                Response.Redirect("~/Pages/DogeLogin.aspx");
             }
         }
         protected void btnHoneymoonBookNow_Click(object sender,EventArgs e)
@@ -79,7 +85,7 @@ namespace HotelDoge
             else
             {
                 Response.Write("<script>alert('" + "Login First!" + "');</script>");
-                Response.Redirect("../DogeLogin.aspx");
+                Response.Redirect("~/Pages/DogeLogin.aspx");
             }
         }
 

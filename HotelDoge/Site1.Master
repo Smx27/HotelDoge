@@ -28,8 +28,8 @@
      <nav class="flexboxallcenter navbar">
       <h3 runat="server" id="Logo" onclick="Logo_click"><span>Hotel<span>Doge</h3>
       <ul class="flexboxallcenter">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#RoomCategories">Categorie</a></li>
+        <li><a runat="server" id="btnMasterHome" onserverclick="btnMasterHome_Click">Home</a></li>
+        <li><a runat="server" id="btnMasterCategorie" onserverclick="btnMasterCategorie_Click">Categorie</a></li>
         <li><a href="#HotelFeatures">Features</a></li>
         <li><a href="#contactus">Contact Us</a></li>
       </ul>

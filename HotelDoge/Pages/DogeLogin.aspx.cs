@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 using BLL;
 
 namespace HotelDoge
@@ -39,24 +40,27 @@ namespace HotelDoge
 
                 if (_userType == "Admin")
                 {
-                    Response.Redirect("~/Pages/User/Admin Ui.aspx");
                     Session["UserType"] = "Admin";
+                    Response.Write("<script>alert('Login Successfull');</script>");
+                    Response.Redirect("~/Pages/Admin/AdminUi.aspx");
+        
                 }
                 else
                 {
-                    Response.Redirect("~/Pages/User/Categorie.aspx");
-                    
+                    Response.Write("<script>alert('Login Successfull');</script>");
                     Session["UserType"] = "User";
+                    Response.Redirect("~/Pages/User/Categorie.aspx");
                 }
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('"+ex+"');</script>");
+                //File.AppendAllText("../../Error.txt", ex.ToString());
             }
         }
 
         protected void btnSignup_ServerClick(object sender, EventArgs e)
-        {
+            {
             _email = txtSignupEmail.Value;
             _password = txtSignupPassword.Value;
             SignupBll signup = new SignupBll();
@@ -70,12 +74,13 @@ namespace HotelDoge
                 if(res>0)
                 {
                     Response.Write("<script>alert('Signup Successfully.');</script>");
-                    Response.Redirect("Categorie.aspx");
+                    Response.Redirect("~/Pages/User/Categorie.aspx");
                 }
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex + "');</script>");
+                //File.AppendAllText("../../Error.txt", ex.ToString());
             }
         }
     }

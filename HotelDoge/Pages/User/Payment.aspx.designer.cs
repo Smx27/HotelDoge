@@ -21,7 +21,7 @@ namespace HotelDoge
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCheckin;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtCheckin;
 
         /// <summary>
         /// txtCheckout control.
@@ -30,7 +30,7 @@ namespace HotelDoge
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCheckout;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtCheckout;
 
         /// <summary>
         /// txtNumofPeople control.

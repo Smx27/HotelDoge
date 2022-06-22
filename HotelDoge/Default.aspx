@@ -59,12 +59,12 @@
           <h1>Search</h1>
           <div class="Searchbar">
             <label for="txtCheckin"><i class="las la-calendar"></i></label>
-            <input type="date" id="txtCheckin" runat="server" />
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCheckin" Display="None" ErrorMessage="Checkin Date is Empty"></asp:RequiredFieldValidator>
+            <input type="date" id="txtCheckin" runat="server"/>
             <label for="txtCheckout"><i class="las la-calendar"></i></label>
             <input type="date" id="txtCheckout" runat="server" />
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCheckout" Display="None" ErrorMessage="Checkout Date is Empty"></asp:RequiredFieldValidator>
-              <asp:ValidationSummary runat="server" ShowMessageBox="true" ShowSummary="false" />
+            <%--  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCheckin" Display="None" ErrorMessage="Checkin Date is Empty"></asp:RequiredFieldValidator>--%>
+             <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCheckout" Display="None" ErrorMessage="Checkout Date is Empty"></asp:RequiredFieldValidator>
+              <asp:ValidationSummary runat="server" ShowMessageBox="true" ShowSummary="false" />--%>
             <button ID="btnSearch" runat="server" onserverclick="BtnSearchClick">
                 <i runat="server" class="las la-search"></i>
             </button>
@@ -212,6 +212,24 @@
   </footer> 
      <p id="Author">Designed by <a href="instragram.com/smx2_7">Sumit Maiti</a></p>
     <script>
+        //var today = new Date();
+        //var dd = today.getDate();
+        //var mm = today.getMonth() + 1; 
+        //var yyyy = today.getFullYear();
+
+        //if (dd < 10) {
+        //    dd = '0' + dd;
+        //}
+
+        //if (mm < 10) {
+        //    mm = '0' + mm;
+        //}
+
+        //today = yyyy + '-' + mm + '-' + dd;
+        //document.getElementById("txtCheckin").setAttribute("min", today);
+
+
+
         const image = document.getElementById('slideimage');
         let counter = 1;
 
@@ -220,7 +238,7 @@
                 counter = 1
             }
             else {
-                document.getElementById("slideimage").src = './Image/' + counter++ + '.jpg';
+                document.getElementById("slideimage").src = '../Image/' + counter++ + '.jpg';
             }
         }, 5000);
     </script>

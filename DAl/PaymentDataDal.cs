@@ -13,7 +13,7 @@ namespace DAl
     {
         DateTime _checkin;
         DateTime _checkout;
-        int _roomno;
+        string _roomno;
         string _full_name;
         string _email;
         long _aadharno;
@@ -27,7 +27,7 @@ namespace DAl
         string _username;
         int _numberOfpeople;
 
-        public int Roomno { get => _roomno; set => _roomno = value; }
+        
         public DateTime Checkin { get => _checkin; set => _checkin = value; }
         public DateTime Checkout { get => _checkout; set => _checkout = value; }
         public string Full_name { get => _full_name; set => _full_name = value; }
@@ -42,14 +42,7 @@ namespace DAl
         public string TransationId { get => _transationId; set => _transationId = value; }
         public string Username { get => _username; set => _username = value; }
         public int NumberOfpeople { get => _numberOfpeople; set => _numberOfpeople = value; }
-
-
-
-        //Grolbal Connection Veriables
-        string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-        SqlConnection con = null;
-        SqlCommand cmd = null;
-
+        public string Roomno { get => _roomno; set => _roomno = value; }
 
         /// <summary>
         /// This method inserts user data and return int of row inserted
@@ -57,6 +50,9 @@ namespace DAl
         /// <returns>int</returns>
         public int InsertUrData()
         {
+            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            SqlConnection con = null;
+            SqlCommand cmd = null;
             using (con = new SqlConnection(cs))
             {
                 try
@@ -68,7 +64,7 @@ namespace DAl
                     cmd.Parameters.AddWithValue("@PhNo", _contactNo);
                     cmd.Parameters.AddWithValue("@AadharCard", _aadharno);
                     cmd.Parameters.AddWithValue("@Address", _address);
-                    cmd.Parameters.AddWithValue("@UserName", Username);
+                    cmd.Parameters.AddWithValue("@UserName", _email);
                     con.Open();
                     int Number = cmd.ExecuteNonQuery();
                     return Number;
@@ -84,33 +80,75 @@ namespace DAl
 
             }
         }
+        //public int insertpaydata()
+        //{
+
+        //}
         /// <summary>
         /// It Returns Room Number
         /// </summary>
         public void GetDataDal()
         {
+        
+            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            SqlConnection con = null;
             try
             {
-                using(con=new SqlConnection(cs))
+                using (con = new SqlConnection(cs))
                 {
-                    cmd = new SqlCommand("spGetRoomNo", con);
+                    SqlCommand cmd = new SqlCommand("spGetRoomNo", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@@roomtype", _roomType);
-                    SqlDataReader rdr = cmd.ExecuteReader();
+                    cmd.Parameters.AddWithValue("@roomtype", _roomType);
                     con.Open();
-                    _roomno = (int)rdr.GetValue(rdr.GetOrdinal("RoomNumber"));
-                    _roomprice = (int)rdr.GetValue(rdr.GetOrdinal("RoomPrice"));
+                    //DataTable table = new DataTable();
+                    //SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    //sda.Fill(table);
+                    //GridView1.DataSource = table;
+
+                    SqlDataReader rdr = cmd.ExecuteReader();
+                    while (rdr.Read())
+                    {
+                        _roomno = Convert.ToString(rdr["RoomNumber"]);
+                        _roomprice = Convert.ToInt32(rdr["RoomPrice"]);
+                       
+
+                    }
+                    //Roomno.Text = (string)rdr.GetValue(rdr.GetOrdinal("RoomNumber"));
+                    //roomprice.Text = (string )rdr.GetValue(rdr.GetOrdinal("RoomPrice"));
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
             finally
             {
                 con.Close();
             }
-           
+            //string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            //SqlConnection con = null;
+            //try
+            //{
+            //    using (con = new SqlConnection(cs))
+            //    {
+            //        SqlCommand cmd = new SqlCommand("spGetRoomNo", con);
+            //        cmd.CommandType = CommandType.StoredProcedure;
+            //        cmd.Parameters.AddWithValue("@roomtype", _roomType);
+            //        con.Open();
+            //        SqlDataReader rdr = cmd.ExecuteReader();
+            //        Roomno = (string)rdr.GetValue(rdr.GetOrdinal("RoomNumber"));
+            //        _roomprice = (int)rdr.GetValue(rdr.GetOrdinal("RoomPrice"));
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw ex;
+            //}
+            //finally
+            //{
+            //    con.Close();
+            //}
+
         }
     }
 }

@@ -80,6 +80,7 @@ body {
 
         .side_panel ul li:hover {
             border-bottom: 2px solid var(--Heilightcolor);
+            cursor:pointer;
             box-shadow: 4.5px 4.5px 11.5px -17px rgba(0, 0, 0, 0.037), 12.5px 12.5px 31.7px -17px rgba(0, 0, 0, 0.067), 30.1px 30.1px 76.3px -17px rgba(0, 0, 0, 0.091), 100px 100px 253px -17px rgba(0, 0, 0, 0.15);
         }
 
@@ -95,6 +96,7 @@ body {
         flex-direction: row;
         list-style: none;
         width: 100%;
+        border-bottom:2px solid transparent;
         height: 30%;
     }
 
@@ -136,6 +138,7 @@ body {
         align-items: center;
         flex-direction: row;
     }
+    
 
 .chartcanvas {
     grid-area: RevenueChart;

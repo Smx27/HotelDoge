@@ -21,12 +21,12 @@
                 <div class="infoinput">
                     <%--Text will be inputed into text boxand the label will contains the value name--%>
                     <label for="" id="Checkin"></label>
-                    <input runat="server" id="txtCheckin" type="text" disabled required class="name" placeholder="Check in">
+                    <input runat="server" id="txtCheckin" type="date" data-date-format="YYYY MM DD"  class="name" placeholder="Check in">
                     <label for="" id="Checkout"></label>
-                    <input id="txtCheckout" runat="server" type="text" disabled required class="name" placeholder="Check out">
+                    <input id="txtCheckout" runat="server" type="date" class="name" placeholder="Check out">
                     <label for="" id="People"></label>
                     <input id="txtNumofPeople" runat="server" type="number " disabled required class="name" placeholder="No Of People">
-                    <label for="" id="NoofRoom"></label>
+                    <label for="txtRoomNumber" id="NoofRoom"></label>
                     <input type="text" runat="server" id="txtRoomNumber" required class="name" placeholder="Room Number ">
                     <br>
                 </div>

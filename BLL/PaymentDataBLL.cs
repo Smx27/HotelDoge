@@ -11,7 +11,7 @@ namespace BLL
     {
         DateTime _checkinbll;
         DateTime _checkoutbll;
-        int _roomnobll;
+        string _roomnobll;
         string _full_namebll;
         string _emailbll;
         long _aadharnobll;
@@ -37,35 +37,42 @@ namespace BLL
         public long Aadharnobll { get => _aadharnobll; set => _aadharnobll = value; }
         public string Emailbll { get => _emailbll; set => _emailbll = value; }
         public string Full_namebll { get => _full_namebll; set => _full_namebll = value; }
-        public int Roomnobll { get => _roomnobll; set => _roomnobll = value; }
+
         public DateTime Checkoutbll { get => _checkoutbll; set => _checkoutbll = value; }
         public DateTime Checkinbll { get => _checkinbll; set => _checkinbll = value; }
         public int NumberOfPeoplebll { get => _numberOfPeoplebll; set => _numberOfPeoplebll = value; }
+        public string Roomnobll { get => _roomnobll; set => _roomnobll = value; }
 
         public int InsertDatabll()
         {
-            List<PaymentDataDal> paymentData = new List<PaymentDataDal>
-            {
-                new PaymentDataDal
-                {
-                    Full_name=_full_namebll,
-                    Email=_emailbll,
-                    ContactNo=_contactNobll,
-                    Aadharno=_aadharnobll,
-                    Address=_addressbll,
-                    Username=_usernamebll,
-                    TransationId=guid.ToString(),
-                    PaymentId=_paymentIdbll,
-                    Roomno=_roomnobll,
-                    Roomprice=_roompricebll,
-                    RoomType=_roomTypebll,
-                    Checkin=_checkinbll,
-                    Checkout=_checkoutbll,
-                    Numberofroom=_numberofroombll,
-                    NumberOfpeople=_numberOfPeoplebll
-                }
-            };
+            //List<PaymentDataDal> paymentData = new List<PaymentDataDal>
+            //{
+            //    new PaymentDataDal
+            //    {
+            //        //@Name,@mail,@PhNo,@AadharCard,@Address,@UserName
+            //        Full_name=_full_namebll,
+            //        Email=_emailbll,
+            //        ContactNo=_contactNobll,
+            //        Aadharno=_aadharnobll,
+            //        Address=_addressbll,
+            //        Username=_usernamebll,
+            //        TransationId=guid.ToString(),
+            //        PaymentId=_paymentIdbll,
+            //        Roomno=Roomnobll,
+            //        Roomprice=_roompricebll,
+            //        RoomType=_roomTypebll,
+            //        Checkin=_checkinbll,
+            //        Checkout=_checkoutbll,
+            //        Numberofroom=_numberofroombll,
+            //        NumberOfpeople=_numberOfPeoplebll
+            //    }
+            //};
             PaymentDataDal dataDal = new PaymentDataDal();
+            dataDal.Full_name = _full_namebll;
+            dataDal.Email = _emailbll;
+            dataDal.ContactNo = _contactNobll;
+            dataDal.Aadharno = _aadharnobll;
+            dataDal.Address = _addressbll;
             int roweffected=(int)dataDal.InsertUrData();
             return roweffected;
         }
@@ -76,6 +83,8 @@ namespace BLL
             payment.RoomType = _roomTypebll;
             payment.GetDataDal();
             _transationIdbll = guid.ToString();
+            _roompricebll = payment.Roomprice;
+            _roomnobll = payment.Roomno;
         }
     }
 }

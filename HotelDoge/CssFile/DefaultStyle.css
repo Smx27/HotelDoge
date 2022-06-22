@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -537,7 +538,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         transform: translate(-50%, -50%);
         width: 50%;
         height: 60%;
-        background-image: url(./Image/3.jpg);
+        background-image: url(../Image/3.jpg);
         background-size: cover;
         padding: 10px;
         border: 10px solid white;
